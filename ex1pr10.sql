@@ -21,4 +21,4 @@ insert into emp values(7844, 'TURNER', 'SALESMAN', 7698, to_date('8-9-1981','dd-
 insert into emp values(7876, 'ADAMS', 'CLERK', 7788, to_date('13-7-1987', 'dd-mm-yyyy'), 1100, null, 20);
 insert into emp values(7900, 'JAMES', 'CLERK', 7698, to_date('3-12-1981','dd-mm-yyyy'), 950, null, 30);
 insert into emp values(7934, 'MILLER', 'CLERK', 7782, to_date('23-1-1982','dd-mm-yyyy'),1300, null, 10);
-select * from emp where mgr=7698 or mgr=7566 and sal>1500;
+select * from emp where sal>1500 and (mgr='7566' or mgr='7698');
